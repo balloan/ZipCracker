@@ -21,7 +21,7 @@ def main(zip_name, dict_name):
             zip_attack(z_file,password)
     
 if __name__ == '__main__':
-    parser = argparse.ArgumentParser(usage='Zipcracker.py ZIPFILE DICTFILE')
+    parser = argparse.ArgumentParser(usage='Zipcracker.py ZIPFILE -d DICTFILE')
     parser.add_argument('-d', '--dictionary', required=True, help = 'Select the dictionary to use')
     parser.add_argument('zipfile', help='Select the zip file to use')
     args = parser.parse_args()
