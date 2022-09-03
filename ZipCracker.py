@@ -5,7 +5,6 @@ Does not currently support multiprocessing; use john or similar tools for real w
 
 import zipfile
 import argparse
-from multiprocessing import Pool
 import time
 
 def zip_attack(zip_file, pass_list):
